@@ -1,0 +1,311 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Русский (Россия) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Русский (Россия) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Латышский (Латвия) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_LVI)
+LANGUAGE LANG_LATVIAN, SUBLANG_DEFAULT
+#pragma code_page(1257)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAINCOMPINFO DIALOGEX 0, 0, 311, 179
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Computer Information"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close all wnd",IDOK,6,158,50,14
+    LTEXT           "Computer Name",IDC_STATIC,59,27,54,8
+    LTEXT           "User Name",IDC_STATIC,59,43,37,8
+    LTEXT           "Windows Version",IDC_STATIC,59,59,58,8
+    LTEXT           "Physical memory, MB",IDC_STATIC,59,75,70,8
+    LTEXT           "Free PnMem, MB",IDC_STATIC,59,91,56,8
+    LTEXT           "Percent of memory in use",IDC_STATIC,59,108,85,8
+    LTEXT           "Current Date&Time",IDC_STATIC,59,121,59,8
+    LTEXT           "Time since power ON",IDC_STATIC,59,134,71,8
+    CTEXT           "unknown",IDC_COMPNAME,144,24,116,13,0,WS_EX_STATICEDGE
+    CTEXT           "unknown",IDC_VERSION,144,56,116,13,0,WS_EX_STATICEDGE
+    CTEXT           "unknown",IDC_USERNAME,144,39,116,13,0,WS_EX_STATICEDGE
+    CTEXT           "unknown",IDC_TOTALRAM,144,73,116,13,0,WS_EX_STATICEDGE
+    CTEXT           "unknown",IDC_FREERAM,144,89,116,13,0,WS_EX_STATICEDGE
+    CTEXT           "unknown",IDC_TIMEON,144,134,116,13,0,WS_EX_STATICEDGE
+    CTEXT           "unknown",IDC_DATETIME,144,120,116,13,0,WS_EX_STATICEDGE
+    CTEXT           "unknown",IDC_PERCENTRAM,144,104,116,13,0,WS_EX_STATICEDGE
+END
+
+IDD_MAIN_SECOND_LAB DIALOGEX 0, 0, 359, 148
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Process control"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Exit",IDOK,16,115,50,14
+    GROUPBOX        "Command Line",IDC_STATIC,10,11,157,124
+    EDITTEXT        IDC_COMMANDLINE,21,44,114,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Start",IDC_START,20,68,50,14
+    PUSHBUTTON      "Terminate",IDC_TERMINATE,82,68,50,14
+    PUSHBUTTON      "...",IDC_BROWSE,141,44,18,14
+    RTEXT           "State",IDC_STATIC,191,34,44,8
+    RTEXT           "PID",IDC_STATIC,191,48,42,8
+    RTEXT           "Start Time",IDC_STATIC,191,65,42,8
+    RTEXT           "Finish Time",IDC_STATIC,191,82,42,8
+    GROUPBOX        "Process Information",IDC_STATIC,186,16,161,120
+    CTEXT           "-",IDC_STATE,244,32,92,13,0,WS_EX_STATICEDGE
+    CTEXT           "-",IDC_PID,244,48,92,13,0,WS_EX_STATICEDGE
+    CTEXT           "-",IDC_STARTTIME,244,63,92,13,0,WS_EX_STATICEDGE
+    CTEXT           "-",IDC_FINISHTIME,244,80,92,13,0,WS_EX_STATICEDGE
+END
+
+IDD_MAIN_THIRD_LAB DIALOGEX 0, 0, 193, 228
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Scheduler"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Exit",IDOK,0,213,50,14
+    GROUPBOX        "Program to run",IDC_STATIC,4,44,184,44
+    GROUPBOX        "Times list",IDC_STATIC,3,96,185,115
+    CTEXT           "00:00:00",IDC_CLOCK,26,13,84,18
+    PUSHBUTTON      "Pause",IDC_PAUSE,122,10,24,18,BS_ICON
+    EDITTEXT        IDC_COMMANDLINE,7,58,110,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSE,123,58,19,14
+    PUSHBUTTON      "New",IDC_ADD,117,126,50,14
+    PUSHBUTTON      "Delete",IDC_DELETE,118,144,50,14
+    CONTROL         "",IDC_TIME,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_UPDOWN | WS_TABSTOP | 0x8,6,105,111,15
+    LISTBOX         IDC_TIMELIST,7,126,98,75,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_MAIN_FOURTH_LAB DIALOGEX 0, 0, 310, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "??",IDOK,8,156,50,14
+    PUSHBUTTON      "??????",IDCANCEL,253,156,50,14
+END
+
+IDD_MAIN_FIFTH_LAB DIALOGEX 0, 0, 310, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "??",IDOK,54,153,50,14
+    PUSHBUTTON      "??????",IDCANCEL,253,156,50,14
+END
+
+IDD_MAIN_SIXTH_LAB DIALOGEX 0, 0, 310, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "??",IDOK,97,155,50,14
+    PUSHBUTTON      "??????",IDCANCEL,253,156,50,14
+END
+
+IDD_MAIN_SEVENTH_LAB DIALOGEX 0, 0, 310, 177
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "SEVENTH lab"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "??",IDOK,199,143,50,14
+    PUSHBUTTON      "??????",IDCANCEL,253,156,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_MAINCOMPINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 304
+        VERTGUIDE, 29
+        VERTGUIDE, 59
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 172
+    END
+
+    IDD_MAIN_SECOND_LAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 352
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_MAIN_THIRD_LAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 221
+    END
+
+    IDD_MAIN_FOURTH_LAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_MAIN_FIFTH_LAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_MAIN_SIXTH_LAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_MAIN_SEVENTH_LAB, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_MAINCOMPINFO AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_MAIN_SECOND_LAB AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_MAIN_THIRD_LAB AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_MAIN_FOURTH_LAB AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_MAIN_FIFTH_LAB AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_MAIN_SIXTH_LAB AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_MAIN_SEVENTH_LAB AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON2               ICON                    "C:\\Users\\Admin\\info.ico"
+
+IDI_ICON1               ICON                    "C:\\Users\\Admin\\Downloads\\play.ico"
+
+IDI_ICON3               ICON                    "C:\\Users\\Admin\\Downloads\\pause.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDB_PNG1                PNG                     "C:\\Users\\Admin\\Downloads\\1564490_arrow_music_play_arrows_audio_icon.png"
+
+IDB_PNG2                PNG                     "C:\\Users\\Admin\\Downloads\\4964051_audio_media_music_pause_play_icon.png"
+
+#endif    // Латышский (Латвия) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
